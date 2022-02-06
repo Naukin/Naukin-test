@@ -1,0 +1,75 @@
+<div data-aos="fade-up" class="container all-articles" id="all-articles">
+    <div class="row">
+        <h1 class="title">Блог Naukin Design</h1>
+        <div class="mt-5" align="start">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gy-4">
+                <div class="col">
+                    <div class="card article-card">
+                        <img src="/img/article-img3.png" class="card-img-top" alt="article-cover">
+                        <div class="card-body">
+                            <h2 class="article-title">Работы со шрифтами в 2021-м году</h2>
+                            <span class="article-date">24 марта, 2020 год</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card">
+                        <img src="/img/article-img2.png" class="card-img-top" alt="article-cover">
+                        <div class="card-body">
+                            <h2 class="article-title">Работы со шрифтами в 2021-м году</h2>
+                            <span class="article-date">24 марта, 2020 год</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card">
+                        <img src="/img/article-img3.png" class="card-img-top" alt="article-cover">
+                        <div class="card-body">
+                            <h2 class="article-title">Работы со шрифтами в 2021-м году</h2>
+                            <span class="article-date">24 марта, 2020 год</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card">
+                        <img src="/img/article-img2.png" class="card-img-top" alt="article-cover">
+                        <div class="card-body">
+                            <h2 class="article-title">Работы со шрифтами в 2021-м году</h2>
+                            <span class="article-date">24 марта, 2020 год</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card">
+                        <img src="/img/article-img3.png" class="card-img-top" alt="article-cover">
+                        <div class="card-body">
+                            <h2 class="article-title">Работы со шрифтами в 2021-м году</h2>
+                            <span class="article-date">24 марта, 2020 год</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card article-card">
+                        <img src="/img/article-img2.png" class="card-img-top" alt="article-cover">
+                        <div class="card-body">
+                            <h2 class="article-title">Работы со шрифтами в 2021-м году</h2>
+                            <span class="article-date">24 марта, 2020 год</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div v-for="(post, id) in posts" class="col mt-3">
+                    <div class="card-blog mt-4" v-on:click=goToBlog(post.postName)>
+                        <div class="d-flex justify-content-center">
+                            <img :src=post.image class="card-blog-image" alt="...">
+                        </div>
+                        <h3 class="blog-title mt-3 mx-2">{{post.title}}</h3>
+                        <div class="mt-4 mx-2">
+                            <span class="blog-date">{{post.data}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
