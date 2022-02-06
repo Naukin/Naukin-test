@@ -1,0 +1,465 @@
+<div data-aos="fade-up" class="container service mt-72">
+
+    <?php
+    $useragent=$_SERVER['HTTP_USER_AGENT'];
+    if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|
+    iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|
+    pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i',$useragent)||
+        preg_match('/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|
+    amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb
+    |bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|
+    ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|
+    gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|
+    i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |
+    kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|
+    me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|
+    n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|
+    pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|
+    qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|
+    sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|
+    18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|
+    vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|
+    wonu|x700|yas\-|your|zeto|zte\-/i',substr($useragent,0,4))){
+        echo '
+        
+        <div align="center">
+        <span class="sub-title">Наши услуги</span>
+    <div class="row">
+        <div class="col-md-5">
+            <h1 class="title">Всё, в чем нуждается ваш бизнес</h1>
+        </div>
+    </div>
+        </div>
+        ';
+    }
+    else {
+        echo '
+        <span class="sub-title">Наши услуги</span>
+    <div class="row">
+        <div class="col-md-5">
+            <h1 class="title">Всё, в чем нуждается ваш бизнес</h1>
+        </div>
+    </div>
+        ';
+    }
+    ?>
+
+
+    <div class="row pt-72">
+        <div class="card all-service-card">
+            <h1 class="service-title weight-700 my-4">Веб-дизайн</h1>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('landing')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Лэндинг</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-window-maximize"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Лендинг пейдж – сайт имеющий одну страницу с целью продвижения определённого продукта,
+                            товара, услуги. Также посадочная страница может быть нужна для оформления онлайн заказа,
+                            онлайн оплаты или нахождения аудитории заинтересованной в приобретении продукта.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 350 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('business-site')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Сайт визитка</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-window-restore"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Сайт-визитка — направлен в первую очередь на коммуникацию с основной аудиторией. Это место
+                            для размещения главной информации о товаре, услугах и что самое главное о самой компании.
+                            Такой сайт состоит из одной или нескольких страниц, что позволяет ознакомиться с
+                            важной информацией.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 500 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('tilda')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Сайт Tilda</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-check-circle"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Tilda является профессиональным конструктором сайтов.  Главная особенность этого
+                            конструктора - это работа без языков программирования, что позволяет сэкономить
+                            на услугах программиста. Tilda - отличный выход для тех, чьи финансы для
+                            создания сайта сильно ограничены.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 150 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('site-catalog')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Сайт-каталог</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-window-restore"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Сайт-каталог – уникальный вид сайта. Являясь каталогом, данный вид веб-страниц
+                            предназначен для точечного описания услуг и предметов, которые предлагаются компанией.
+                            Цели сайта-каталога в том, чтобы привлечь потенциального клиента и ознакомить его
+                            удобном формате с продукцией.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 800 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('online-store')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Интернет-магазин</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-window-restore"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Интернет-магазин является одним из важнейших инструментов современного бизнеса, магазин в
+                            зависимости от размера и функционала будет полезен всем видам бизнеса. Даже при наличии
+                            интернет-магазина нужно его постоянно развивать и дорабатывать, чтобы успевать отвечать
+                            на изменяющиеся запросы покупателей.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 1000 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('mobile')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Мобильное приложение</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-id-badge"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Мобильная разработка это серьёзный инструмент современного бизнеса. Возможностями данного
+                            инструмента являются эффективная коммуникация со своей аудиторией и сбор её в более удобном,
+                            чем соц. сети месте, возможность перенести на мобильные устройства интернет-магазин и тд.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 1300 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('promo-site')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Промо-сайт</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-window-maximize"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Промо-сайт является — узконаправленным видом сайта, который направлен исключительно на
+                            эффективную продажу определённого вида товара или услуги с целью получить максимальную
+                            прибыль. Промо-сайт имеет сходства с лендингом, однако в данном случае на первом месте
+                            основной товар и его представление.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 800 €</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <a class="purple-link service-link magic-hover-none-cursor" href="#">Остальные услуги <i class="fas none-rotate fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-3">
+        <div class="card all-service-card">
+            <h1 class="service-title weight-700 my-4 ">Графический дизайн</h1>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('logo')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Разработка логотипа</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-heart"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Логотип это графическое изображение, знак или символ, который используется в качестве
+                            инструмента для повышения узнаваемости компании среди конкурентов. Товарный знак это
+                            обязательная составляющая уникального стиля бренда. Он может присутствовать на
+                            различных видах одежды и рекламных материалах.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 150 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('brandbook')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Брендбук</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-map"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Brandbook - это документ, описывающий общие правила позиционирования компания и правила
+                            использования фирменного стиля. Брендбук позволяет качественно интегрировать фирменный
+                            стиль в корпоративную среду. Данный документ позволит упростить задачи связанные с
+                            продвижением и позиционированием компании на рынке.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 250 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('form-style')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Разработки фирм. стиля</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Фирменный стиль компании – это набор графических элементов и форм, концепция и стилистика
+                            которых является единой. Визуальный стиль позволяет донести нужную визуальную информацию до
+                            пользователей и сформировать связь с вашим брендом.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 350 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('print')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Печатная продукция</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-image"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Материалы печатной продукцию выполняют множество разных целей. Визитки, плакаты,
+                            журналы - всё это необходимо для качественного представления компании.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 40 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('label')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Разработка упаковки и этикетки</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-gem"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Упаковка — важный фактор влияющий на первое впечатление, благодаря её виду потребитель
+                            выделит ваш товар среди конкурентов. Также упаковка выполняет следующие функции: защита
+                            товара и увеличение внимания потребителя.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 150 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('presentation')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Дизайн презентаций</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-images"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Презентация — это возможность в визуальном формате подать рекламную и не только информацию.
+                            Из преимуществ этого инструмента можно выделить использование графики, анимации и звукового
+                            сопровождения. Для презентации дизайн разрабатывается, основываясь на фирменном стиле
+                            компании.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 50 €</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <a class="purple-link service-link magic-hover-none-cursor" href="#">Остальные услуги <i class="fas none-rotate fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row pt-3">
+        <div class="card all-service-card">
+            <h1 class="service-title weight-700 my-4">Маркетинг</h1>
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('semantic-core')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Сбор семантического ядра</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-file-alt"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Семантическое ядро — это разделённые по категориям ключевые слова, связанные со структурой
+                            вашего сайта, которые происходят от запросов в интернете. Количество запросов формируется
+                            на основе популярности отрасли и от определённого вида товара.
+                            Ядро необходимо для оптимизации сайта под определенные поисковые запросы.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 50 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('smm')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">SMM продвижение</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-chart-bar"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            SMM - это уникальное направление интернет-маркетинга, включающее в себя весь список
+                            возможностей продвижения и достижения целей в социальных сетях. В данной отрасли есть разные
+                            виды проектов и способов их продвижения, однако главной целью остаётся увеличение
+                            популярности бренда, а также продажа товаров.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 100 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card magic-hover magic-hover__square" v-on:click="goToPage('analysis')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Анализ и доработка сайта</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-edit"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Анализ и доработка готового сайта включают в себя действия направленные на поиск ошибок и
+                            слабых мест сайта с последующим их исправлением. По мимо этого в услугу входит внутрянняя
+                            и внешняя SEO-оптимизация сайта
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 100 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('seo')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">SEO-продвижение сайта</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            SEO-продвижение - это ряд действий, направленных на улучшение показателей веб-сайта в
+                            результатах поисковых систем. Сюда входят внутренняя и внешняя оптимизация сайта, анализ
+                            конкурентов, формирование структуры на основе данных семантического ядра.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 150 €</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="service-card mt-3 magic-hover magic-hover__square" v-on:click="goToPage('advert')">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-8">
+                                <h3 class="service-card-title">Контекстная реклама</h3>
+                            </div>
+                            <div class="offset-md-2 col-md-2 d-flex justify-content-end">
+                                <i class="service-icon far fa-eye"></i>
+                            </div>
+                        </div>
+                        <p class="service-card-description">
+                            Контекстная реклама — это уникальный вид интернет-рекламы, который подбирается с учётом
+                            тематики интернет-сайта. Реклама показываются только целевой аудитории, за счет чего данный
+                            способ продвижения позволяет получать увеличенную посещаемость и находить клиентов
+                            готовых к покупке.
+                        </p>
+                        <span class="service-card-price">
+                            Цена: <span class="purple-link">От 100 €</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <a class="purple-link service-link magic-hover-none-cursor" href="#">Остальные услуги <i class="fas none-rotate fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
